@@ -68,7 +68,6 @@
     <!-- Continue adding employee cards here -->
 
 </div>
-<button class="emergency-button" onclick="emergencyCall()">Emergency Call</button>
 <script src="scripts.js"></script>
 
 <script>
@@ -83,6 +82,12 @@ function emergencyCall() {
 }
 
 </script>
+<div class="card" onclick="sendEmergencyMessage()">
+    <div class="card-header">Send Emergency Message</div>
+    <div class="card-body">
+        <p>Send an emergency message to all employees.</p>
+        <button style="background-color: #e74c3c;" onclick="sendEmergencyMessage()">Emergency Message</button>
+    </div>
+</div>
 </body>
 </html>
-
