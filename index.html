@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Employee Cards</title>
+    <style>
+        /* Add this style for the green button */
+        .card button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style for the email span */
+        .card span.email {
+            margin-right: 10px;
+        }
+        /* Add this style for the blue email button */
+        .card button.email {
+            background-color: #3498db;
+        }
+
+    </style>
+    <style>
+    /* Style for the emergency call button */
+    .emergency-button {
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px; /* Add margin for spacing */
+    }
+</style>
+
+</head>
+<body>
+
+<div class="card-container">
+    <!-- Add employee cards here -->
+    <div class="card" onclick="makeContact('BOUROUAHA MOSTEFA', '0662837557', 'Mostefa.Bourouaha@Sonatrach.dz')">
+        <div class="card-header">BOUROUAHA MOSTEFA</div>
+        <div class="card-body">
+            <p>Function: Chef SCT_Prevention</p>
+            <p>Phone Number: <span class="phone">0662837557</span></p>
+            <p>Email: <span class="email">Mostefa.Bourouaha@Sonatrach.dz</span></p>
+            <!-- Add the green call button -->
+            <button onclick="makeCall('0662837557')">Call</button>
+            <button class="email" onclick="sendEmail('Mostefa.Bourouaha@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+    <div class="card" onclick="makeContact('BOUALI HICHEM', '0671024704', 'Hicham.BOUALI@Sonatrach.dz')">
+        <div class="card-header">BOUALI HICHEM</div>
+        <div class="card-body">
+            <p>Function: ing Securite</p>
+            <p>Phone Number: <span class="phone">0671024704</span></p>
+            <p>Email: <span class="email">Hicham.BOUALI@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0671024704')">Call</button>
+            <button class="email" onclick="sendEmail('Hicham.BOUALI@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <!-- Continue adding employee cards here -->
+
+</div>
+<button class="emergency-button" onclick="emergencyCall()">Emergency Call</button>
+<script src="scripts.js"></script>
+
+<script>
+    // script.js
+
+// ... (الوظائف الحالية)
+
+// Function for emergency call
+function emergencyCall() {
+    // قم بالاتصال بجميع الأرقام هنا
+    alert('Calling all employees for emergency!');
+}
+
+</script>
+</body>
+</html>
 
