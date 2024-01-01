@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Employee Cards</title>
+    <style>
+        /* Add this style for the green button */
+        .card button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style for the email span */
+        .card span.email {
+            margin-right: 10px;
+        }
+        /* Add this style for the blue email button */
+        .card button.email {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card-container">
+    <!-- Add employee cards here -->
+    <div class="card" onclick="makeContact('BOUROUAHA MOSTEFA', '0662837557', 'Mostefa.Bourouaha@Sonatrach.dz')">
+        <div class="card-header">BOUROUAHA MOSTEFA</div>
+        <div class="card-body">
+            <p>Function: Chef SCT_Prevention</p>
+            <p>Phone Number: <span class="phone">0662837557</span></p>
+            <p>Email: <span class="email">Mostefa.Bourouaha@Sonatrach.dz</span></p>
+            <!-- Add the green call button -->
+            <button onclick="makeCall('0662837557')">Call</button>
+            <button class="email" onclick="sendEmail('Mostefa.Bourouaha@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('BOUALI HICHEM', '0671024704', 'Hicham.BOUALI@Sonatrach.dz')">
+        <div class="card-header">BOUALI HICHEM</div>
+        <div class="card-body">
+            <p>Function: ing Securite</p>
+            <p>Phone Number: <span class="phone">0671024704</span></p>
+            <p>Email: <span class="email">Hicham.BOUALI@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0671024704')">Call</button>
+            <button class="email" onclick="sendEmail('Hicham.BOUALI@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('ABBA ABDELKADER', '0659986117', 'ABDELKADER.ABBA@Sonatrach.dz')">
+        <div class="card-header">ABBA ABDELKADER</div>
+        <div class="card-body">
+            <p>Function: ing Securite</p>
+            <p>Phone Number: <span class="phone">0659986117</span></p>
+            <p>Email: <span class="email">ABDELKADER.ABBA@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0659986117')">Call</button>
+            <button class="email" onclick="sendEmail('ABDELKADER.ABBA@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('BAGUI FAYCEL', '0662078081', 'FAYCAL.BAGUI@Sonatrach.dz')">
+        <div class="card-header">BAGUI FAYCEL</div>
+        <div class="card-body">
+            <p>Function: Tech Prevention</p>
+            <p>Phone Number: <span class="phone">0662078081</span></p>
+            <p>Email: <span class="email">FAYCAL.BAGUI@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0662078081')">Call</button>
+            <button class="email" onclick="sendEmail('FAYCAL.BAGUI@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+    <!-- Continue adding employee cards here -->
+
+    <div class="card" onclick="makeContact('BELAZGHAM TAQIY EDDINE', '0699891881', 'MOHAMMEDTAQIYEDDINE.BELAZGHEM@Sonatrach.dz')">
+        <div class="card-header">BELAZGHAM TAQIY EDDINE</div>
+        <div class="card-body">
+            <p>Function: Tech Prevention</p>
+            <p>Phone Number: <span class="phone">0699891881</span></p>
+            <p>Email: <span class="email">MOHAMMEDTAQIYEDDINE.BELAZGHEM@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0699891881')">Call</button>
+            <button class="email" onclick="sendEmail('MOHAMMEDTAQIYEDDINE.BELAZGHEM@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('TAYBI ABDALLAH', '0664384739', 'TAYEBI.Abdallah@Sonatrach.dz')">
+        <div class="card-header">TAYBI ABDALLAH</div>
+        <div class="card-body">
+            <p>Function: Tech Intervention</p>
+            <p>Phone Number: <span class="phone">0664384739</span></p>
+            <p>Email: <span class="email">TAYEBI.Abdallah@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0664384739')">Call</button>
+            <button class="email" onclick="sendEmail('TAYEBI.Abdallah@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('ALLAOUA FOUAD', '0664214588', 'Fouad.ALLAOUA@Sonatrach.dz')">
+        <div class="card-header">ALLAOUA FOUAD</div>
+        <div class="card-body">
+            <p>Function: Tech Intervention</p>
+            <p>Phone Number: <span class="phone">0664214588</span></p>
+            <p>Email: <span class="email">Fouad.ALLAOUA@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0664214588')">Call</button>
+            <button class="email" onclick="sendEmail('Fouad.ALLAOUA@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('BOUKHRIS MEDJDOUB', '0661629572', 'BOUKHRIS.Medjdoub@Sonatrach.dz')">
+        <div class="card-header">BOUKHRIS MEDJDOUB</div>
+        <div class="card-body">
+            <p>Function: Chef E_Intervention</p>
+            <p>Phone Number: <span class="phone">0661629572</span></p>
+            <p>Email: <span class="email">BOUKHRIS.Medjdoub@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0661629572')">Call</button>
+            <button class="email" onclick="sendEmail('BOUKHRIS.Medjdoub@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('MECHAKRA TARIK', '0657103302', 'TARIK.MECHAKRA@Sonatrach.dz')">
+        <div class="card-header">MECHAKRA TARIK</div>
+        <div class="card-body">
+            <p>Function: Chef E_Intervention</p>
+            <p>Phone Number: <span class="phone">0657103302</span></p>
+            <p>Email: <span class="email">TARIK.MECHAKRA@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0657103302')">Call</button>
+            <button class="email" onclick="sendEmail('TARIK.MECHAKRA@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('MAMMERI MEBAREK', '0000000000', 'MEBAREK.MAMMERI@Sonatrach.dz')">
+        <div class="card-header">MAMMERI MEBAREK</div>
+        <div class="card-body">
+            <p>Function: Chef E_Intervention</p>
+            <p>Phone Number: <span class="phone">(Not provided)</span></p>
+            <p>Email: <span class="email">MEBAREK.MAMMERI@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0000000000')">Call</button>
+            <button class="email" onclick="sendEmail('MEBAREK.MAMMERI@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('BOUZAIEN BACHIR', '0000000000', 'BOUZIANE.Bachir@Sonatrach.dz')">
+        <div class="card-header">BOUZAIEN BACHIR</div>
+        <div class="card-body">
+            <p>Function: Chef E_Intervention</p>
+            <p>Phone Number: <span class="phone">(Not provided)</span></p>
+            <p>Email: <span class="email">BOUZIANE.Bachir@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0000000000')">Call</button>
+            <button class="email" onclick="sendEmail('BOUZIANE.Bachir@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('HAMLAOUI ABDELKADER', '0000000000', 'Abdelkader.Hamlaoui@Sonatrach.dz')">
+        <div class="card-header">HAMLAOUI ABDELKADER</div>
+        <div class="card-body">
+            <p>Function: Agent Intervention</p>
+            <p>Phone Number: <span class="phone">(Not provided)</span></p>
+            <p>Email: <span class="email">Abdelkader.Hamlaoui@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0000000000')">Call</button>
+            <button class="email" onclick="sendEmail('Abdelkader.Hamlaoui@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('ATAOUAT SAID', '0660149427', 'SAID.ATAOUAT@Sonatrach.dz')">
+        <div class="card-header">ATAOUAT SAID</div>
+        <div class="card-body">
+            <p>Function: Agent Intervention</p>
+            <p>Phone Number: <span class="phone">0660149427</span></p>
+            <p>Email: <span class="email">SAID.ATAOUAT@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0660149427')">Call</button>
+            <button class="email" onclick="sendEmail('SAID.ATAOUAT@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('HACENE L'HACENE', '0656410469', 'L'hacene.Hacene@Sonatrach.dz')">
+        <div class="card-header">HACENE L'HACENE</div>
+        <div class="card-body">
+            <p>Function: Agent Intervention</p>
+            <p>Phone Number: <span class="phone">0656410469</span></p>
+            <p>Email: <span class="email">L'hacene.Hacene@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0656410469')">Call</button>
+            <button class="email" onclick="sendEmail('Lhacene.Hacene@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('AKRABOU MOHAMMED ABDALLAH', '0668168895', 'MOHAMMEDABDALLAH.AKRABOU@Sonatrach.dz')">
+        <div class="card-header">AKRABOU MOHAMMED ABDALLAH</div>
+        <div class="card-body">
+            <p>Function: Tech Intervention</p>
+            <p>Phone Number: <span class="phone">0668168895</span></p>
+            <p>Email: <span class="email">MOHAMMEDABDALLAH.AKRABOU@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0668168895')">Call</button>
+            <button class="email" onclick="sendEmail('MOHAMMEDABDALLAH.AKRABOU@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('CHAFAI MOHAMED EL HASSAN', '0675140895', 'MOHAMMEDELHASSAN.CHAFAI@Sonatrach.dz')">
+        <div class="card-header">CHAFAI MOHAMED EL HASSAN</div>
+        <div class="card-body">
+            <p>Function: Tech Intervention</p>
+            <p>Phone Number: <span class="phone">0675140895</span></p>
+            <p>Email: <span class="email">MOHAMMEDELHASSAN.CHAFAI@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0675140895')">Call</button>
+            <button class="email" onclick="sendEmail('MOHAMMEDELHASSAN.CHAFAI@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('MAHFOUD MUSTAFA', '0662893649', 'MUSTAPHA.MAHFOUD@Sonatrach.dz')">
+        <div class="card-header">MAHFOUD MUSTAFA</div>
+        <div class="card-body">
+            <p>Function: Tech Intervention</p>
+            <p>Phone Number: <span class="phone">0662893649</span></p>
+            <p>Email: <span class="email">MUSTAPHA.MAHFOUD@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0662893649')">Call</button>
+            <button class="email" onclick="sendEmail('MUSTAPHA.MAHFOUD@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('HAMI ABDELLAH', '0668659895', 'ABDELLAH.HAMI@Sonatrach.dz')">
+        <div class="card-header">HAMI ABDELLAH</div>
+        <div class="card-body">
+            <p>Function: Tech Intervention</p>
+            <p>Phone Number: <span class="phone">0668659895</span></p>
+            <p>Email: <span class="email">ABDELLAH.HAMI@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0668659895')">Call</button>
+            <button class="email" onclick="sendEmail('ABDELLAH.HAMI@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('ABIDI AHMED', '0656523999', 'AHMED.ABIDI@Sonatrach.dz')">
+        <div class="card-header">ABIDI AHMED</div>
+        <div class="card-body">
+            <p>Function: Agent Intervention</p>
+            <p>Phone Number: <span class="phone">0656523999</span></p>
+            <p>Email: <span class="email">AHMED.ABIDI@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0656523999')">Call</button>
+            <button class="email" onclick="sendEmail('AHMED.ABIDI@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('ZAHOUANI NOUR EDDINE', '0663308381', 'NOUREDDINE.ZAHOUANI@Sonatrach.dz')">
+        <div class="card-header">ZAHOUANI NOUR EDDINE</div>
+        <div class="card-body">
+            <p>Function: Agent Intervention</p>
+            <p>Phone Number: <span class="phone">0663308381</span></p>
+            <p>Email: <span class="email">NOUREDDINE.ZAHOUANI@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0663308381')">Call</button>
+            <button class="email" onclick="sendEmail('NOUREDDINE.ZAHOUANI@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('MEFTAH YAHIA', '0674455489', 'Yahia.Meftah@Sonatrach.dz')">
+        <div class="card-header">MEFTAH YAHIA</div>
+        <div class="card-body">
+            <p>Function: Tech Prevention</p>
+            <p>Phone Number: <span class="phone">0674455489</span></p>
+            <p>Email: <span class="email">Yahia.Meftah@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0674455489')">Call</button>
+            <button class="email" onclick="sendEmail('Yahia.Meftah@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="makeContact('SMAHI ILYAS', '0676113847', 'ILYAS.SMAHI@Sonatrach.dz')">
+        <div class="card-header">SMAHI ILYAS</div>
+        <div class="card-body">
+            <p>Function: Tech Prevention</p>
+            <p>Phone Number: <span class="phone">0676113847</span></p>
+            <p>Email: <span class="email">ILYAS.SMAHI@Sonatrach.dz</span></p>
+            <button onclick="makeCall('0676113847')">Call</button>
+            <button class="email" onclick="sendEmail('ILYAS.SMAHI@Sonatrach.dz')">Email</button>
+        </div>
+    </div>
+
+<!-- Repeat the above structure for each employee -->
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+    <!-- Repeat the above structure for each employee -->
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
+
